@@ -1,0 +1,20 @@
+Create table store (id Integer primary key, name text, quantity integer, size text, price integer,aisle integer);
+insert into store values (1,"jeans", 25, 12, 49,1);
+insert into store values (2,"sweatshirts", 50, 16, 39,2);
+insert into store values (3,"shoes", 20, 10, 20,5);
+insert into store values (4,"tshirts", 40, 12, 49,4);
+insert into store values (5,"hats", 30,1, 25,8);
+insert into store values (6,"bumper_stickers",40,1,40,9);
+insert into store values (7,"coffee_mugs",30,1,30,5);
+insert into store values (8,"necklaces", 10,1,10,7);
+insert into store values (9,"scarves",15,1,15,10);
+insert into store values (10,"magnets",60,1,2,3);
+insert into store values (11,"socks",45,1,5,4);
+insert into store values (12,"belts",10, 1, 15,8);
+insert into store values (13,"key_chains",40,1,3,5);
+insert into store values (14,"tote_bags", 25,1,10,2);
+insert into store values (15, "post_cards",60,1,2,1);
+
+select * from store
+order by aisle;
+select SUM(quantity)from store;
